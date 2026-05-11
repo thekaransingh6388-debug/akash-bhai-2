@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Deepak Wadhwa | Stock Market Telegram</title>
+    <meta name="description" content="Join Deepak Wadhwa's Telegram channel for daily Nifty, BankNifty & Stock Options calls with 80-90% accuracy. Live analysis & 3-4 observational calls daily.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0a0f1e 0%, #0b1120 100%);
+            font-family: 'Segoe UI', 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+            padding: 1.5rem;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* premium card - background same as before */
+        .tg-card {
+            max-width: 580px;
+            width: 100%;
+            margin: 0 auto;
+            background: #0f172a;
+            border-radius: 2rem;
+            box-shadow: 0 30px 50px -20px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(48, 108, 255, 0.2);
+            overflow: hidden;
+            transition: transform 0.2s ease;
+        }
+
+        /* logo + header */
+        .hero-section {
+            text-align: center;
+            padding: 2rem 1.5rem 1rem 1.5rem;
+            background: radial-gradient(ellipse at 50% 0%, rgba(37, 99, 235, 0.1), transparent 70%);
+        }
+
+        .logo-wrapper {
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 1.2rem;
+            background: #0f172a;
+            border-radius: 50%;
+            padding: 6px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 0 0 2px rgba(59, 130, 246, 0.3);
+        }
+
+        .logo-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            background: #0b1120;
+        }
+
+        .channel-name {
+            font-size: 1.9rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #FFFFFF, #94a3ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: -0.3px;
+            margin-bottom: 0.4rem;
+        }
+
+        .tagline {
+            color: #8ba1cf;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border-top: 1px dashed rgba(59, 130, 246, 0.4);
+            display: inline-block;
+            padding-top: 0.5rem;
+        }
+
+        /* Benefits / stock points block */
+        .features-block {
+            background: rgba(5, 10, 25, 0.5);
+            margin: 1.2rem 1.5rem;
+            padding: 1.3rem 1rem;
+            border-radius: 1.6rem;
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+
+        .features-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.9rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #e2edff;
+            letter-spacing: -0.2px;
+        }
+
+        .check-icon {
+            background: #1e3a8a;
+            width: 26px;
+            height: 26px;
+            border-radius: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+            color: #60a5fa;
+            box-shadow: 0 0 6px #2563eb40;
+        }
+
+        .disclaimer-text {
+            font-size: 0.7rem;
+            color: #7c8db0;
+            text-align: center;
+            margin-top: 1rem;
+            padding-top: 0.6rem;
+            border-top: 1px solid rgba(72, 98, 150, 0.4);
+            font-weight: 400;
+        }
+
+        /* BUTTON STYLES - ATTENTION GRABBING YELLOW / GOLD */
+        .telegram-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+            background: linear-gradient(135deg, #f5b042 0%, #e68a2e 100%);
+            border: none;
+            padding: 1rem 0.8rem;
+            border-radius: 3rem;
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #0f172a;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            text-decoration: none;
+            font-family: inherit;
+            letter-spacing: 0.5px;
+            box-shadow: 0 10px 18px -8px rgba(0, 0, 0, 0.5);
+            text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+        }
+
+        .telegram-btn:hover {
+            background: linear-gradient(135deg, #ffc857 0%, #f59e2a 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 18px 28px -12px #e68a2e80;
+            color: #0a0f1e;
+        }
+
+        .telegram-btn:active {
+            transform: translateY(1px);
+        }
+
+        /* button first area & last wrapper margins */
+        .button-first-area {
+            margin: 0.2rem 1.5rem 0.8rem 1.5rem;
+        }
+
+        .last-btn-wrapper {
+            margin: 1.5rem 1.5rem 2rem 1.5rem;
+        }
+
+        /* about section / channel intro */
+        .about-section {
+            margin: 1rem 1.5rem 0.5rem 1.5rem;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 1.4rem;
+            padding: 1rem 1.2rem;
+            text-align: center;
+        }
+
+        .about-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #f5b042;
+            margin-bottom: 0.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .about-text {
+            font-size: 0.85rem;
+            line-height: 1.45;
+            color: #cbd5e6;
+        }
+
+        .footer-note {
+            text-align: center;
+            font-size: 0.65rem;
+            color: #f5b042aa;
+            padding: 0.5rem 1rem 1.5rem;
+            letter-spacing: 0.3px;
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .channel-name {
+                font-size: 1.6rem;
+            }
+            .feature-item {
+                font-size: 0.9rem;
+            }
+            .telegram-btn {
+                font-size: 1rem;
+                padding: 0.85rem 0.8rem;
+            }
+            .tg-card {
+                border-radius: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="tg-card">
+    <!-- Hero: Logo + Name + First Join Telegram Button (below name) -->
+    <div class="hero-section">
+        <div class="logo-wrapper">
+            <img class="logo-img" src="https://karanmetalabe.com/wp-content/uploads/2025/11/WhatsApp-Image-2025-10-14-at-12.14.49_fd910fb7.jpg" alt="Deepak Wadhwa Logo" onerror="this.onerror=null;this.src='https://placehold.co/200x200?text=DW';">
+        </div>
+        <div class="channel-name">Deepak Wadhwa</div>
+        <div class="tagline">⚡ LIVE STOCK MARKET INSIGHTS ⚡</div>
+    </div>
+
+    <!-- BUTTON 1: exactly below the name (as per request) -->
+    <div class="button-first-area">
+        <a href="https://t.me/+xTvoUrbVVqpjZDhl" target="_blank" rel="noopener noreferrer" class="telegram-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 4.5L2.5 12.5L9 13.5L12.5 20.5L21.5 4.5Z"/><path d="M15.5 9L9.5 13.5L13 17.5"/></svg>
+            JOIN TELEGRAM CHANNEL
+        </a>
+    </div>
+
+    <!-- Stock-related high converting points (NIFTY/BANKNIFTY & accuracy) -->
+    <div class="features-block">
+        <div class="features-list">
+            <div class="feature-item">
+                <span class="check-icon">📊</span> 
+                <span>NIFTY, BANKNIFTY & STOCK OPTIONS...</span>
+            </div>
+            <div class="feature-item">
+                <span class="check-icon">🎯</span> 
+                <span>✅ Get up to 100-300 Points</span>
+            </div>
+            <div class="feature-item">
+                <span class="check-icon">📈</span> 
+                <span>✅ 80-90% Accuracy</span>
+            </div>
+            <div class="feature-item">
+                <span class="check-icon">📞</span> 
+                <span>✅ 3-4 observational Call daily</span>
+            </div>
+            <div class="feature-item">
+                <span class="check-icon">🏆</span> 
+                <span>✅ 3 daily best trade for all</span>
+            </div>
+        </div>
+        <div class="disclaimer-text">
+            📢 Disclaimer:- DAILY FREE DEMO CALL ✅
+        </div>
+    </div>
+
+    <!-- About Section: Live stock analysis + additional trust builder -->
+    <div class="about-section">
+        <div class="about-title">
+            🔍 LIVE STOCK ANALYSIS 🔥
+        </div>
+        <div class="about-text">
+            ⚡ Daily market breakdown, option chain insights & real-time levels.<br>
+            📍 Get accurate entry/exit with high probability setups. Join our growing family of smart traders!
+        </div>
+    </div>
+
+    <!-- Second JOIN TELEGRAM button at the bottom (last wala exactly) -->
+    <div class="last-btn-wrapper">
+        <a href="https://t.me/+xTvoUrbVVqpjZDhl" target="_blank" rel="noopener noreferrer" class="telegram-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 4.5L2.5 12.5L9 13.5L12.5 20.5L21.5 4.5Z"/><path d="M15.5 9L9.5 13.5L13 17.5"/></svg>
+            JOIN TELEGRAM CHANNEL
+        </a>
+    </div>
+
+    <!-- micro footer (consistent) -->
+    <div class="footer-note">
+        ⚡ Daily 3-5 Calls | Live Analysis | NO HYPE only REAL EDGE
+    </div>
+</div>
+
+</body>
+</html>
